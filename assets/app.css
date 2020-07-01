@@ -1,0 +1,230 @@
+body {
+	font-family: 'Muli', sans-serif;
+	font-size: 24px;
+	color: #283845;
+	background-color: #bebebe;
+}
+
+#me {
+	max-width: 300px;
+	max-height: 300px;
+	box-shadow: 5px 5px 5px gray;
+}
+
+i {
+	font-size: 4em;
+	color: #cf7132;
+	margin: 0px 10px 30px 10px;
+	opacity: .7;
+}
+
+i:hover {
+	opacity: 1;
+}
+
+.formbody {
+	display: flex;
+}
+
+label {
+	justify-content: center;
+}
+
+input {
+	justify-content: center;
+}
+
+.card-deck {
+	min-height: 450px;
+}
+
+.card img {
+	/*width: 90%;*/
+	height: 50%;
+	align-self: center;
+}
+
+.tryButton {
+	color: #cf7132;
+}
+
+.card-text {
+	font-size: .7em;
+}
+
+.work {
+	color: #cf7132;
+	font-weight: 800;
+	font-size: 2em;
+}
+
+#contactform {
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+input #sbtn {
+	color: #cf7132;
+	background: ;
+}
+
+/*Arrow Animation*/
+/*.container {
+	background: PaleGoldenRod;
+	height: 100vh;
+	padding: 20px;
+	text-align: center;
+}
+
+.content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	p {
+		margin: 0 0 20px;
+	}
+}*/
+
+/* Arrow & Hover Animation */
+#more-arrows {
+	width: 75px;
+	height: 65px;
+
+	&:hover {
+		polygon {
+			fill: #fff;
+			transition: all .2s ease-out;
+
+			&.arrow-bottom {
+				transform: translateY(-18px);
+			}
+
+			&.arrow-top {
+				transform: translateY(18px);
+			}
+		}
+	}
+}
+
+polygon {
+	fill: #fff;
+	transition: all .2s ease-out;
+
+	&.arrow-middle {
+		opacity: 0.75;
+	}
+
+	&.arrow-top {
+		opacity: 0.5;
+	}
+}
+
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+	font-family: inherit;
+	font-size: 100%;
+	color: inherit;
+	border: none;
+	border-radius: 0;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+	font-size: .9em;
+	margin-bottom: .5em;
+	padding-top: .2em;
+	display: flex;
+	align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: .75em 1em;
+	margin-bottom: 1.5em;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+	background-color: white;
+	outline-style: solid;
+	outline-width: thin;
+	outline-color: gray;
+	outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+	width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+	width: auto;
+	cursor: pointer;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+	outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+	margin-bottom: 0;
+}
+#fs-frm select {
+	text-transform: none;
+}
+
+#fs-frm [type="checkbox"] {
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
+	appearance: checkbox;
+	display: inline-block;
+	width: auto;
+	margin: 0 .5em 0 0 !important;
+}
+
+#fs-frm [type="radio"] {
+	-webkit-appearance: radio;
+	-moz-appearance: radio;
+	appearance: radio;
+}
+
+/* address, locale */
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+	display: inline;
+}
+#fs-frm fieldset.locale input[name="city"] {
+	width: 52%;
+}
+#fs-frm fieldset.locale select[name="state"],
+#fs-frm fieldset.locale input[name="postal-code"] {
+	width: 20%;
+}
+#fs-frm fieldset.locale input[name="city"],
+#fs-frm fieldset.locale select[name="state"] {
+	margin-right: 3%;
+}
